@@ -91,3 +91,10 @@ function onListening() {
   console.log('==== The app is running on http://localhost:' + port );
   debug('Listening on ' + bind);
 }
+
+
+//testing this code 
+const indexRouter = require('./app/routes/index');  // adjust the path as needed
+// ... (other code)
+app.use('/', indexRouter);
+// ... (other code)
