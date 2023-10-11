@@ -12,7 +12,7 @@ const router = express.Router();
 // write a comment for the following code block
 
 router.get('/', (req, res) => {
-  res.send('Welcome to Dress Store API, use PostMan to test endpoints');
+  res.json('Welcome to Dress Store API, use PostMan to test endpoints');
 });
 
 /*
