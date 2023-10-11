@@ -1,10 +1,11 @@
 const express  = require('express');
+const mongoose = require('mongoose');
 const indexRouter = require('../apps/routes/index');
 
 const app = express();
 
 app.use(express.json());
-app.use('./', indexRouter);
+app.use('/', indexRouter);
 
 // Connect to MongoDB without including the collection name in the URL
 mongoose.connect('mongodb+srv://appuser:appuser@cluster0.dgrqmgc.mongodb.net/DressStore', { useNewUrlParser: true, useUnifiedTopology: true })
